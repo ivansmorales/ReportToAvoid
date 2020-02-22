@@ -14,10 +14,7 @@
     <section id="header">
         <div id="right">
             <h1>Report to Avoid</h1>
-            <h2>Desarrollo de una aplicación web que ofrecerá al usuario la posibilidad de reportar cualquier tipo de
-                incidencia
-                o queja que se considere moral y/o éticamente incorrecta, que haya vivido en cualquier momento de su
-                día.
+            <h2>Desarrollo de una aplicación web que ofrecerá al usuario la posibilidad de reportar cualquier tipo de incidencia o queja que se considere moral y/o éticamente incorrecta, que haya vivido en cualquier momento de su día.
             </h2>
             <h3><i class="fas fa-map-marker-alt"></i> ITESM CCM.</h3>
         </div>
@@ -27,7 +24,43 @@
     </section>
     <section id="code">
         <h4>Codigo</h4>
-        <code>TEST</code>
+        <pre>
+            <code>
+                
+                #include  &lt;stdio.h&gt;
+                #include &lt;stdlib.h&gt;
+                    
+                    int main(void) {
+                      int counter = 0;
+                      int sum = 0;
+                      int * n = malloc(sizeof(int));
+                      printf("Numero: ");
+                      scanf("%d", n);  
+                    
+                      for (int j = 1; j < *n +1; j++){
+                        int counter = 0;
+                        for(int i = 1; i < j + 1 ; i++){
+                          int sum = 0;
+                          if( j%i == 0 ){
+                            counter = counter+1;        
+                          }
+                        }   
+                        
+                        if (counter == 2){
+                          printf("%d \n", j);    
+                          sum = sum + j ;
+                        }    
+                      }
+                    
+                      printf("%d = suma números primos", sum); 
+                    
+                      free(n); 
+                      return 0;
+                    }
+
+            </code>
+        </pre>
+
     </section>
     <section id="variable">
         <h4>Variable</h4>
@@ -39,6 +72,13 @@
     </section>
     <section id="problematica">
         <h4>Problematica</h4>
+
+        <p>
+            En la CDMX existe un factor común que no contribuye más que a empeorar la ya preocupante situación que se vive diariamente en las calles, el factor al que nos referimos son sus habitantes y su escasa buena conducta social. Planteamos que ya es momento
+            de actuar de manera responsable con el propósito de aportar y provocar un cambio favorable por mínimo que sea, jamás con la intención de descalificar o violentar. Para que nuestra ciudad mejore no debemos solo exigir la respuesta de las autoridades,
+            también debemos contribuir actuando de manera cívica, humanizar y responsabilizar el ambiente social de las calles cooperando como sociedad para poder contribuir a nuestra comunidad.
+        </p>
+
     </section>
     <section id="historias">
         <h4>Historias de usuario</h4>
