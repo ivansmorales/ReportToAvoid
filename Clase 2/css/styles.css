@@ -60,3 +60,7 @@ h4 {
 #validator {
     padding: 2% 15% 3%;
 }
+
+#validator img {
+    width: 80%;
+}
