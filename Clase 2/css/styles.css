@@ -31,7 +31,7 @@ h4 {
 }
 
 #header {
-    padding: 7% 15%;
+    padding: 7% 15% 7%;
     left: 0;
 }
 
@@ -54,5 +54,5 @@ h4 {
 #problematica,
 #historias,
 #validator {
-    padding: 40% 15% 7%;
+    padding: 2% 15% 3%;
 }
