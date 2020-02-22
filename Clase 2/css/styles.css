@@ -37,7 +37,8 @@ h4 {
     left: 0;
 }
 
-#right {
+#right,
+#right2 {
     position: relative;
     width: 50%;
     float: left;
