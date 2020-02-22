@@ -11,13 +11,29 @@ body {
 }
 
 h1 {
+    font-size: 3rem;
     color: #020402;
 }
 
+h1:hover {
+    color: #646165;
+}
+
 h2 {
-    color: #82846D;
+    font-size: 1.4rem;
+    color: #646165;
+    padding: 0 8rem 0 8rem;
 }
 
 h3 {
-    color: #646165;
+    color: #82846D;
+    font-size: 1.2rem;
+}
+
+.code,
+.variable,
+.cita,
+.problematica,
+.historias {
+    padding-top: 20px;
 }
