@@ -1,3 +1,30 @@
 body {
     font-family: "Poppins", sans-serif;
+    background-color: #fff;
+}
+
+#carousel img {
+    width: 30%;
+}
+
+#about,
+#integrants,
+#contact,
+#form,
+#news {
+    padding: 7% 15%;
+}
+
+.bg-dark {
+    background-color: #0E4749 !important;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
