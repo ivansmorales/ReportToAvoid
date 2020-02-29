@@ -64,3 +64,12 @@ h1 {
 .featuresp {
     color: #fff;
 }
+
+
+.container {
+    padding: 80px 120px;
+}
+
+.size{
+    width: 200px; height: 200px;
+}
