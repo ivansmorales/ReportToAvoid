@@ -12,6 +12,10 @@
     <!--  Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
 
+    <!--  Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <!--  Scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
@@ -25,8 +29,14 @@
 
 <body>
     <section id="header">
+<<<<<<< HEAD
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+=======
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+>>>>>>> 644de10a832723db0907853feb4731b727ed08cc
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#">Report To Avoid</a>
@@ -37,24 +47,25 @@
                         <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca de</a>
+                        <a class="nav-link" href="#about">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Integrantes</a>
+                        <a class="nav-link" href="#integrants">Integrantes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#contact">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Formato</a>
+                        <a class="nav-link" href="#form">Formato</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Noticias</a>
+                        <a class="nav-link" href="#news">Noticias</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </section>
+<<<<<<< HEAD
     <section id="about"></section>
     <section id="integrants"></section>
     <section id="contact"></section>
@@ -99,6 +110,110 @@
 
         </div>
 
+=======
+    <section id="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('img/image1.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Reporta incidencias.</h5>
+                        <p>Ayuda al usuario</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('img/image2.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Reporta incidencias.</h5>
+                        <p>Ayuda al usuario</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('img/image3.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Reporta incidencias.</h5>
+                        <p>Ayuda al usuario</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section id="about">
+        <h1>Acerca de</h1>
+        <p>Desarrollo de una <span>aplicación web</span> que ofrecerá al usuario la posibilidad de reportar cualquier
+            tipo de
+            incidencia o queja que se considere moral y/o éticamente incorrecta, que haya vivido en cualquier momento de
+            su día.
+        </p>
+    </section>
+    <section id="features">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="feature-box col-lg-4">
+                    <i class="icon fas fa-check-circle fa-4x"></i>
+                    <h3 class="feature-title">Fácil de reportar.</h3>
+                    <p class="featuresp">Puedes crear reportes de manera sencilla.</p>
+                </div>
+
+                <div class="feature-box col-lg-4">
+                    <i class="icon fas fa-address-book fa-4x"></i>
+                    <h3 class="feature-title">Checar reportes.</h3>
+                    <p class="featuresp">Puedes revisar los reportes más actualizados.</p>
+                </div>
+
+                <div class="feature-box col-lg-4">
+                    <i class="icon fas fa-heart fa-4x"></i>
+                    <h3 class="feature-title">Salva vidas.</h3>
+                    <p class="featuresp">Salva vidas reportando a otras personas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="integrants">
+        <h1>Integrantes</h1>
+        
+          <div class="container text-center">
+                      <h3>INTEGRANTES</h3>
+                      <p><em>Todos somos estudiantes del TEC CCM</em></p>
+                      <p>Somos estudiantes de ITC y estamos tomando la clase Aplicaciones Web</p>
+                      <br>
+                         
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <p><strong>Alexandra Solís </strong></p><br>
+                          <img src="img/me.png"
+                             class="size"alt="Alexandra Solis">
+                        </div>
+                        <div class="col-sm-4">
+                          <p><strong>Diego Moreno</strong></p><br>
+                          <img src="img/minion.png"  class="size" alt="Diego Moreno">
+                        </div>
+                        <div class="col-sm-4">
+                          <p><strong>Ivan Morales</strong></p><br>
+                          <img src="img/Ivan.png"  class="size" alt="Ivan Morales">
+                        </div>
+                      </div>
+                         </div>
+    </section>
+    <section id="contact">
+        <h1>Contacto</h1>
+    </section>
+    <section id="form">
+        <h1>Formato</h1>
+    </section>
+    <section id="news">
+        <h1>Noticias</h1>
+>>>>>>> 644de10a832723db0907853feb4731b727ed08cc
     </section>
 </body>
 
