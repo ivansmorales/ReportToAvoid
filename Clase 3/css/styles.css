@@ -1,26 +1,26 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: #fff;
+    color: black;
 }
 
 h1 {
     margin-bottom: 2rem;
+    color: black;
 }
+
 
 #carousel img {
     width: 30%;
 }
 
 #about,
-#features,
 #integrants,
 #contact,
 #form,
 #news {
     padding: 7% 15%;
 }
-
-
 
 .bg-dark {
     background-color: #0E4749 !important;
@@ -39,4 +39,28 @@ h1 {
 /* Features */
 #features {
     background-color: #002626;
+    padding: 5% 15%;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    color: #E1F0C4;
+}
+
+.feature-box {
+    padding: 4.5%;
+    text-align: center;
+}
+
+.icon {
+    color: #E1F0C4;
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #95C623;
+}
+
+.featuresp {
+    color: #fff;
 }
