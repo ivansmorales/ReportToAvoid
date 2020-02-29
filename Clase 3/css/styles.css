@@ -36,6 +36,15 @@ h1 {
     background-size: cover;
 }
 
+/* About */
+#about p {
+    font-size: 1.3rem;
+}
+
+#about span {
+    color: #95C623;
+}
+
 /* Features */
 #features {
     background-color: #002626;
