@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <section id="header">
+    <div id="header">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -57,7 +57,7 @@
                 </ul>
             </div>
         </nav>
-    </section>
+    </div>
     <section id="carousel">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -148,10 +148,9 @@
         </div>
     </section>
     <section id="contact" style="background-color: #002626; color: white;">
+        <h2 class="h1-responsive font-weight-bold text-center my-4" style="color: #95C623;">Contáctanos</h2>
 
-        <section class="mb-4">
-
-            <h2 class="h1-responsive font-weight-bold text-center my-4" style="color: #95C623;">Contáctanos</h2>
+        <div class="mb-4">
 
             <p class="text-center w-responsive mx-auto mb-5"> Puedes dejarnos un mensaje en la siguiente caja y nos pondremos en contacto contigo.</p>
 
@@ -159,40 +158,26 @@
 
                 <div class="col-md-9 mb-md-0 mb-5">
                     <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="name" class="">Nombre</label>
                                 <input type="text" id="name" name="name" class="form-control" placeholder="Nombre">
-
                             </div>
-
                             <div class="form-group col-md-6">
                                 <label for="email" class="">E-mail</label>
                                 <input type="email" id="email" name="email" class="form-control" placeholder="E-mail">
-
                             </div>
-
                         </div>
-
                         <div class="form-group">
                             <label for="subject" class="">Título</label>
                             <input type="text" id="subject" name="subject" class="form-control" placeholder="Título">
-
                         </div>
-
                         <div class="form-group">
                             <label for="message">Mensaje</label>
                             <textarea id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Aquí escribe tu mensaje"></textarea>
-
                         </div>
-
                         <a class="btn btn-success" onclick="document.getElementById('contact-form').submit();">Enviar</a>
-
-
                     </form>
-
-
                 </div>
 
                 <div class="col-md-3 text-center">
@@ -200,11 +185,9 @@
                         <li><i class="fas fa-map-marker-alt fa-2x" style="color: #95C623;"></i>
                             <p>Tecnológico de Monterrey Campus Ciudad de México</p>
                         </li>
-
                         <li><i class="fas fa-phone mt-4 fa-2x" style="color: #95C623;"></i>
                             <p>+ 55 5483 2020</p>
                         </li>
-
                         <li><i class="fas fa-envelope mt-4 fa-2x" style="color: #95C623;"></i>
                             <p>contact@reportoavoid.com</p>
                         </li>
@@ -213,7 +196,7 @@
 
             </div>
 
-        </section>
+        </div>
 
     </section>
     <section id="form">
@@ -231,10 +214,12 @@
                         <input type="text" class="form-control" id="cumpleaños" placeholder="Fecha">
                     </div>
                 </div>
+
                 <div class="form-group">
                     <label for="pais">País de residencia</label>
                     <input type="text" class="form-control" id="pais" placeholder="País">
                 </div>
+
                 <div class="form-group">
                     <label for="email">E-mail</label>
                     <input type="email" class="form-control" id="email-fn" placeholder="E-mail">
@@ -242,20 +227,54 @@
 
                 <div class="form-group">
                     <label for="message">Mensaje</label>
-                    <textarea id="message_f" name="message_f" rows="2" class="form-control md-textarea"></textarea>
-
+                    <textarea id="message_f" name="message_f" rows="2" class="form-control md-textarea" placeholder="Escribir mensaje"></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-success">Enviar</button>
             </form>
 
         </div>
-
-
-
     </section>
-    <section id="news">
-        <h1>Noticias</h1>
+    <section id="news" style="background-color: #002626; color: #002626;">
+        <div class="container text-center">
+            <h1 style="color: #95C623;">Noticias</h1>
+
+            <div class="row  bg-light position-relative">
+                <div class="col-md-6 p-md-4 pl-md-0">
+                    <img src="img/bache.jpg" class="w-100" alt="Bache">
+                </div>
+                <div class="col-md-6 p-4 pl-md-0">
+                    <h2><a href="https://www.wibe.com/blog/familia/reportar-dano-baches-cdmx/" class="stretched-link">Baches, una trampa costosa</a>
+                    </h2>
+                    <p>Según la encuesta Nacional de Seguridad Pública Urbana del 2016, para los mexicanos existe un mayor problema que la inseguridad y no es que sea un tema menor, pero los baches se han convertido en uno de los mayores males de nuestros
+                        conductores. </p>
+                </div>
+            </div>
+
+            <div class="row  bg-light position-relative" style="margin-top: 10px;">
+                <div class="col-md-6 p-md-4 pl-md-0">
+                    <img src="img/bache2.jpg" class="w-100" alt="Bache">
+                </div>
+                <div class="col-md-6 p-4 pl-md-0">
+                    <h2><a href="https://www.excelsior.com.mx/blog/tus-finanzas-en-facil/como-reportar-un-bache-en-la-cdmx/1310999" class="stretched-link">¿Cómo reportar un bache en la CDMX?</a>
+                    </h2>
+                    <p>¿TRansitas por la Ciudad de México?, ¿cuántas veces has caído en un bache tan grande que sientes que tus llantas se quedaron en el pavimento?, ¿sabes qué puedes hacer al respecto? </p>
+                </div>
+            </div>
+
+            <div class="row  bg-light position-relative" style="margin-top: 10px;">
+                <div class="col-md-6 p-md-4 pl-md-0">
+                    <img src="img/estacionado.jpg" class="w-100" alt="Carro mal estacionado">
+                </div>
+                <div class="col-md-6 p-4 pl-md-0">
+                    <h2><a href="https://www.publimetro.com.mx/mx/noticias/2017/02/22/autos-mal-estacionados-mas-denunciado-app-supercivicos.html" class="stretched-link">Autos mal estacionados, lo más denunciado en app de Supercívicos</a>
+                    </h2>
+                    <p>A tres meses de operación, se han realizado mil 147 video denuncias donde prevalecen los autos mal estacionados; ciudadanos no dan seguimiento a exigencias </p>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 </body>
 
