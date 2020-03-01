@@ -9,8 +9,29 @@ h1 {
     color: black;
 }
 
+h5 {
+    font-size: 2.2rem;
+    color: white;
+    font-weight: 800;
+}
+
+/* Carousel */
 #carousel img {
     width: 30%;
+}
+
+#carousel p {
+    font-size: 1.3rem;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #about,
@@ -24,17 +45,6 @@ h1 {
 .bg-dark {
     background-color: #0E4749 !important;
 }
-
-.carousel-item {
-    height: 100vh;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 
 /* About */
 
