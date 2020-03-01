@@ -9,7 +9,6 @@ h1 {
     color: black;
 }
 
-
 #carousel img {
     width: 30%;
 }
@@ -36,7 +35,9 @@ h1 {
     background-size: cover;
 }
 
+
 /* About */
+
 #about p {
     font-size: 1.3rem;
 }
@@ -45,7 +46,9 @@ h1 {
     color: #95C623;
 }
 
+
 /* Features */
+
 #features {
     background-color: #002626;
     padding: 5% 15%;
@@ -74,11 +77,11 @@ h1 {
     color: #fff;
 }
 
-
 .container {
     padding: 80px 120px;
 }
 
-.size{
-    width: 200px; height: 200px;
+.size {
+    width: 250px;
+    height: 250px;
 }
