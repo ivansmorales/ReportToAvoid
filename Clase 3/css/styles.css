@@ -108,6 +108,20 @@ h1 {
     text-align: center;
 }
 
+/* News */
+#news {
+    background-color: #002626;
+    color: #002626;
+}
+
+#news h1 {
+    color: #95C623;
+}
+
+#news .myrow {
+    margin-top: 10px;
+}
+
 /* Footer */
 #footer {
     background-color: #fff;
