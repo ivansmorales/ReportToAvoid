@@ -41,7 +41,7 @@
                 <button><i class="fas fa-star"></i>Valorado</button>
             </div>
             <div class="col s10 righty">
-                <div class="container">
+                <div id="crear" class="container">
                     <h1>Reporte de Incidencias</h1>
                     <div class="row">
                         <form class="col s12">
@@ -61,17 +61,23 @@
                                     <label for="last_name">Last Name</label>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Descripción del reporte</label>
+                                </div>
+                            </div>
+                            <a class="waves-effect waves-light btn-small">Publicar</a>
                         </form>
                     </div>
                 </div>
-
+                <div id="reportes"></div>
+                <div id="historial"></div>
+                <div id="valorado"></div>
             </div>
 
         </div>
     </section>
-    <section id="reportes"></section>
-    <section id="historial"></section>
-    <section id="valorado"></section>
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>

@@ -11,10 +11,15 @@ body {
     #navbar {
         img {
             //width: 50%;
+            margin-left: 5.5rem;
         }
 
         .charcoal {
             background-color: $charcoal;
+        }
+
+        .right {
+            padding-right: 10rem;
         }
     }
 
@@ -22,7 +27,7 @@ body {
         //padding-top: 2rem;
 
         .lefty {
-            border-right: 0.09rem solid $charcoal;
+            ///border-right: 0.09rem solid $charcoal;
             padding-top: 2rem;
 
             button {
@@ -44,11 +49,23 @@ body {
         }
 
         .righty {
-            h1 {
-                color: $jungleg;
-                font-size: 2rem;
-                font-weight: 600;
+            border-left: 0.09rem solid $charcoal;
+
+            #crear {
+                h1 {
+                    color: $jungleg;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    text-align: center;
+                }
             }
+
+            #reportes,
+            #historial,
+            #valorado {
+                display: none;
+            }
+
         }
     }
 }
