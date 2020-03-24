@@ -15,7 +15,9 @@ h5 {
     font-weight: 800;
 }
 
+
 /* Carousel */
+
 #carousel img {
     width: 30%;
 }
@@ -45,6 +47,7 @@ h5 {
 .bg-dark {
     background-color: #0E4749 !important;
 }
+
 
 /* About */
 
@@ -94,6 +97,7 @@ h5 {
 
 
 /* Contact */
+
 #contact {
     background-color: #002626;
     color: white;
@@ -107,6 +111,7 @@ h5 {
     color: #95C623;
 }
 
+
 /* Integrants */
 
 #integrants .featuresp {
@@ -118,7 +123,9 @@ h5 {
     text-align: center;
 }
 
+
 /* News */
+
 #news {
     background-color: #002626;
     color: #002626;
@@ -132,7 +139,9 @@ h5 {
     margin-top: 10px;
 }
 
+
 /* Footer */
+
 #footer {
     background-color: #fff;
     padding: 1.5% 0;
