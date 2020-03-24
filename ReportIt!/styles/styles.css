@@ -1,0 +1,22 @@
+body {
+  background-color: #EDEDED;
+}
+
+body #navbar .charcoal {
+  background-color: #2F404E;
+}
+
+body #main {
+  padding-top: 2rem;
+}
+
+body #main .lefty button {
+  width: 100%;
+  font-size: 1.3rem;
+  margin: 1rem 0 1rem 0;
+  background-color: #EDEDED;
+  color: #2F404E;
+  border: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,36 @@
+$charcoal: #2F404E;
+$babypowder: #FDFFFC;
+$jungleg: #26A195;
+$amaranth: #E93148;
+$deep: #FFA730;
+$main: #EDEDED;
+
+body {
+    background-color: $main;
+
+    #navbar {
+        img {
+            //width: 50%;
+        }
+
+        .charcoal {
+            background-color: $charcoal;
+        }
+    }
+
+    #main {
+        padding-top: 2rem;
+
+        .lefty {
+            button {
+                width: 100%;
+                font-size: 1.3rem;
+                margin: 1rem 0 1rem 0;
+                background-color: $main;
+                color: $charcoal;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
