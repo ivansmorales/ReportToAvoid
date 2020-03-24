@@ -1,0 +1,66 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #020402;
+    background-color: #DDFCAD;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #020402;
+}
+
+h1:hover {
+    color: #646165;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #646165;
+    padding: 0 2rem 1rem 2rem;
+}
+
+h3 {
+    color: #82846D;
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+
+
+#header {
+    padding: 7% 15% 20%;
+    left: 0;
+}
+
+#right,
+#right2 {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+#header img {
+    width: 140%;
+}
+
+#code {
+    padding: 20% 15% 3%;
+}
+
+#variable,
+#cita,
+#problematica,
+#historias,
+#validator {
+    padding: 2% 15% 3%;
+}
+
+#validator img {
+    width: 80%;
+}
