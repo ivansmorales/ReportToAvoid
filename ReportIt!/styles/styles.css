@@ -6,7 +6,8 @@ body #navbar .charcoal {
   background-color: #2F404E;
 }
 
-body #main {
+body #main .lefty {
+  border-right: 0.09rem solid #2F404E;
   padding-top: 2rem;
 }
 
@@ -18,5 +19,18 @@ body #main .lefty button {
   color: #2F404E;
   border: none;
   cursor: pointer;
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+}
+
+body #main .lefty button:hover {
+  background-color: #26A195;
+  color: #FDFFFC;
+}
+
+body #main .righty h1 {
+  color: #26A195;
+  font-size: 2rem;
+  font-weight: 600;
 }
 /*# sourceMappingURL=styles.css.map */

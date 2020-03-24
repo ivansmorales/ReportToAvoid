@@ -19,9 +19,12 @@ body {
     }
 
     #main {
-        padding-top: 2rem;
+        //padding-top: 2rem;
 
         .lefty {
+            border-right: 0.09rem solid $charcoal;
+            padding-top: 2rem;
+
             button {
                 width: 100%;
                 font-size: 1.3rem;
@@ -30,6 +33,21 @@ body {
                 color: $charcoal;
                 border: none;
                 cursor: pointer;
+                border-radius: 0.3rem;
+                padding: 0.4rem;
+            }
+
+            button:hover {
+                background-color: $jungleg;
+                color: $babypowder;
+            }
+        }
+
+        .righty {
+            h1 {
+                color: $jungleg;
+                font-size: 2rem;
+                font-weight: 600;
             }
         }
     }
