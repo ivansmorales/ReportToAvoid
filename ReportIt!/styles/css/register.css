@@ -10819,9 +10819,10 @@ body {
 }
 
 img {
-  width: 200px;
-  height: 100px;
+  width: 150px;
+  height: 50px;
   margin-left: 5%;
+  margin-top: 20px;
 }
 
 h1 {
@@ -10891,6 +10892,52 @@ a {
   width: 60%;
   margin-top: 5px;
   height: 35px;
+}
+
+@media (max-width: 480px) {
+  img {
+    width: 170px;
+    height: 50px;
+    margin-left: 7%;
+  }
+
+  .login {
+    height: 450px;
+    width: 90%;
+    background-color: #2f404e;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  a {
+    color: #26a195;
+  }
+
+  .form-control {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom: 1px;
+    height: 40px;
+  }
+
+  .btn-success {
+    width: 90%;
+    margin-top: 25px;
+    height: 35px;
+  }
+
+  .btn-secondary {
+    width: 90%;
+    margin-top: 25px;
+    height: 35px;
+  }
+
+  .form-group label {
+    color: white;
+  }
 }
 
 /*# sourceMappingURL=register.css.map */

@@ -15,6 +15,7 @@ img {
     width: $width_logo_header;
     height: $height_logo_header;
     margin-left: 5%;
+    margin-top: 20px;
 }
 
 h1 {
@@ -86,4 +87,53 @@ a {
     width: $width_button;
     margin-top: 5px;
     height: 35px;
+}
+
+//Mobile version
+@mixin mobile {
+    @media (max-width:#{$mobile-width}) {
+        @content;
+    }
+}
+
+@include mobile {
+    img {
+        width: 170px;
+        height: 50px;
+        margin-left: 7%;
+    }
+    .login {
+        height: 450px;
+        width: 90%;
+        background-color: $color-background;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    a {
+        color: $color-background-admin;
+    }
+    .form-control {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        margin-bottom: 1px;
+        height: 40px;
+    }
+    .btn-success {
+        width: 90%;
+        margin-top: 25px;
+        height: 35px;
+    }
+    .btn-secondary {
+        width: 90%;
+        margin-top: 25px;
+        height: 35px;
+    }
+    .form-group {
+        label {
+            color: white;
+        }
+    }
 }
