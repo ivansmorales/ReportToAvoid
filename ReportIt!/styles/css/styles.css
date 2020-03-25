@@ -1,24 +1,19 @@
 body {
   background-color: #EDEDED;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-
 body #navbar img {
   margin-left: 5.5rem;
 }
-
 body #navbar .charcoal {
   background-color: #2F404E;
 }
-
 body #navbar .right {
   padding-right: 10rem;
 }
-
 body #main .lefty {
   padding-top: 2rem;
 }
-
 body #main .lefty button {
   width: 100%;
   font-size: 1.3rem;
@@ -30,26 +25,23 @@ body #main .lefty button {
   border-radius: 0.3rem;
   padding: 0.4rem;
 }
-
 body #main .lefty button:hover {
   background-color: #26A195;
   color: #FDFFFC;
 }
-
 body #main .righty {
   border-left: 0.09rem solid #2F404E;
 }
-
 body #main .righty #crear h1 {
   color: #26A195;
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
 }
-
 body #main .righty #reportes,
 body #main .righty #historial,
 body #main .righty #valorado {
   display: none;
 }
+
 /*# sourceMappingURL=styles.css.map */
