@@ -4,6 +4,7 @@
 @import 'bootstrap/forms';
 @import 'bootstrap/buttons';
 @import 'bootstrap/navbar';
+@import 'bootstrap/reboot';
 @import 'bootstrap/utilities/background';
 @import 'bootstrap/mixins/background-variant';
 .bg-secondary {
@@ -16,6 +17,17 @@
 
 .header {
     height: 75px;
+    position: absolute;
+    top: 0;
+}
+
+img {
+    .size {
+        width: 250px;
+        height: 250px;
+        border: 0px solid;
+        border-radius: 50%;
+    }
 }
 
 img {
