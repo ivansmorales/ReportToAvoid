@@ -5,11 +5,11 @@
 @import 'bootstrap/buttons';
 body {
     background-color: $color-background;
+    height: 100%;
 }
 
 .header {
     height: 20%;
-    position: relative;
 }
 
 img {
@@ -41,14 +41,13 @@ a {
 }
 
 .login {
-    position: relative;
     height: 50%;
     width: 40%;
     background-color: $color-form;
     margin-left: $margin_login_signin;
     margin-right: $margin_login_signin;
     padding-top: $margin_top_bottom_login_signin;
-    padding-bottom: $margin_top_bottom_login_signin;
+    padding-bottom: 1%;
 }
 
 .footer {
@@ -67,11 +66,11 @@ a {
 .btn-success {
     background-color: $color-background-admin;
     border-color: $color-background-admin;
-    width: 60%;
+    width: $width_button;
 }
 
 .btn-secondary {
     background-color: $color-background-twitter;
     border-color: $color-background-twitter;
-    width: 60%;
+    width: $width_button;
 }
