@@ -10812,11 +10812,10 @@ input[type=button].btn-block {
 
 body {
   background-color: #2f404e;
-  height: 100%;
 }
 
 .header {
-  height: 20%;
+  height: 100px;
 }
 
 img {
@@ -10839,6 +10838,7 @@ h3 {
   text-align: center;
   color: #fdfffc;
   font-size: 20px;
+  margin-bottom: 8px;
 }
 
 a {
@@ -10846,12 +10846,12 @@ a {
 }
 
 .login {
-  height: 50%;
+  height: 450px;
   width: 40%;
   background-color: rgba(255, 255, 255, 0.5);
   margin-left: 30%;
   margin-right: 30%;
-  padding-top: 5%;
+  padding-top: 1%;
   padding-bottom: 1%;
 }
 
@@ -10860,24 +10860,37 @@ a {
   text-align: center;
   padding-top: 10px;
   height: 50px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .form-control {
   margin-left: 15%;
   margin-right: 15%;
   width: 70%;
+  margin-bottom: 1px;
+  height: 35px;
+}
+
+.form-group {
+  margin-bottom: 8px;
 }
 
 .btn-success {
   background-color: #26a195;
   border-color: #26a195;
   width: 60%;
+  margin-top: 10px;
+  height: 35px;
 }
 
 .btn-secondary {
   background-color: #03a9f4;
   border-color: #03a9f4;
   width: 60%;
+  margin-top: 5px;
+  height: 35px;
 }
 
 /*# sourceMappingURL=register.css.map */
