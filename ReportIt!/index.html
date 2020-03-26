@@ -7,7 +7,7 @@
     <title>Report It | Landing Page</title>
     <!--  Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/css/estilos.css">
+
     <link rel="stylesheet" href="styles/css/landing_page_header.css">
 
     <!--  Google Fonts -->
@@ -29,7 +29,7 @@
 
 <body>
     <section class="header">
-        <nav class="navbar navbar-expand-lg bg-secondary">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-secondary">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -51,9 +51,15 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="box">
+                <div class="ribbon ribbon-top-right"><span>Beta</span>
+                </div>
+            </div>
+
         </nav>
     </section>
-    <section id="carousel">
+    <section class="carousel">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -90,12 +96,11 @@
             </a>
         </div>
     </section>
-    <section id="about">
+
+    <section class="features">
         <h1>Acerca de</h1>
         <p>Desarrollo de una <span>aplicación web</span> que ofrecerá al usuario la posibilidad de reportar cualquier tipo de incidencia o queja que se considere moral y/o éticamente incorrecta, que haya vivido en cualquier momento de su día.
         </p>
-    </section>
-    <section id="features">
         <div class="container-fluid">
             <div class="row">
                 <div class="feature-box col-lg-4">
@@ -118,10 +123,10 @@
             </div>
         </div>
     </section>
-    <section id="integrants">
+    <section class="integrants">
         <h1>Integrantes</h1>
-        <p>Estudiantes de ITC y de la materia Desarrollo de webapps</p>
-        <br>
+        <p>Estudiantes de Ingeniería en Tecnologías Computacionales del Tecnológico de Monterrey que cursan la materia Desarrollo de Aplicaciones Web.</p>
+
         <div class="row">
             <div class="feature-box col-lg-4">
                 <img src="img/me.png" class="size" alt="Alexandra Solis">
@@ -137,59 +142,59 @@
             </div>
         </div>
     </section>
-    <section id="contact">
-        <h2 class="h1-responsive font-weight-bold text-center my-4">Contáctanos</h2>
+    <section class="contact">
+        <h1>Contáctanos</h2>
 
-        <div class="mb-4">
-            <p class="text-center w-responsive mx-auto mb-5"> Puedes dejarnos un mensaje en la siguiente caja y nos pondremos en contacto contigo.</p>
+            <div class="mb-4 ">
+                <p class="text-center w-responsive mx-auto mb-5 "> Puedes dejarnos un mensaje en la siguiente caja y nos pondremos en contacto contigo.</p>
 
-            <div class="row text-center">
+                <div class="row text-center ">
 
-                <div class="col-md-9 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="name" class="">Nombre</label>
-                                <input type="text" id="name" name="name" class="form-control" placeholder="Nombre">
+                    <div class="col-md-9 mb-md-0 mb-5 ">
+                        <form id="contact-form " name="contact-form " action="mail.php " method="POST ">
+                            <div class="form-row ">
+                                <div class="form-group col-md-6 ">
+                                    <label for="name " class=" ">Nombre</label>
+                                    <input type="text " id="name " name="name " class="form-control " placeholder="Nombre ">
+                                </div>
+                                <div class="form-group col-md-6 ">
+                                    <label for="email " class=" ">E-mail</label>
+                                    <input type="email " id="email " name="email " class="form-control " placeholder="E-mail ">
+                                </div>
                             </div>
-                            <div class="form-group col-md-6">
-                                <label for="email" class="">E-mail</label>
-                                <input type="email" id="email" name="email" class="form-control" placeholder="E-mail">
+                            <div class="form-group ">
+                                <label for="subject " class=" ">Título</label>
+                                <input type="text " id="subject " name="subject " class="form-control " placeholder="Título ">
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject" class="">Título</label>
-                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Título">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Aquí escribe tu mensaje"></textarea>
-                        </div>
-                        <a class="btn btn-success" onclick="document.getElementById('contact-form').submit();">Enviar</a>
-                    </form>
-                </div>
+                            <div class="form-group ">
+                                <label for="message ">Mensaje</label>
+                                <textarea id="message " name="message " rows="2 " class="form-control md-textarea " placeholder="Aquí escribe tu mensaje "></textarea>
+                            </div>
+                            <a class="btn btn-success " onclick="document.getElementById( 'contact-form').submit(); ">Enviar</a>
+                        </form>
+                    </div>
 
-                <div class="col-md-3 text-center">
-                    <ul class="list-unstyled mb-0">
-                        <li><i class="icon fas fa-map-marker-alt fa-2x"></i>
-                            <p>Tecnológico de Monterrey Campus Ciudad de México</p>
-                        </li>
-                        <li><i class="icon fas fa-phone mt-4 fa-2x"></i>
-                            <p>+ 55 5483 2020</p>
-                        </li>
-                        <li><i class="icon fas fa-envelope mt-4 fa-2x"></i>
-                            <p>contact@reportoavoid.com</p>
-                        </li>
-                    </ul>
+                    <div class="col-md-3 text-center ">
+                        <ul class="list-unstyled mb-0 ">
+                            <li><i class="icon fas fa-map-marker-alt fa-2x "></i>
+                                <p>Tecnológico de Monterrey Campus Ciudad de México</p>
+                            </li>
+                            <li><i class="icon fas fa-phone mt-4 fa-2x "></i>
+                                <p>+ 55 5483 2020</p>
+                            </li>
+                            <li><i class="icon fas fa-envelope mt-4 fa-2x "></i>
+                                <p>contact@reportoavoid.com</p>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
-
     </section>
 
-    <section id="footer">
+    <section class="footer ">
         <p>© Report To Avoid | 2020</p>
     </section>
 </body>
