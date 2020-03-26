@@ -25,11 +25,12 @@ body {
         }
     }
 
+
     #main {
         //padding-top: 2rem;
 
         .lefty {
-            //border-right: 0.09rem solid $charcoal;
+            //border-right: 0.1rem solid $charcoal;
             padding-top: 2rem;
 
             button {
@@ -50,8 +51,17 @@ body {
             }
         }
 
+        .line {
+            border-left: 0.1rem solid $charcoal;
+            height: 91%;
+            position: absolute;
+            left: 17%;
+            margin-left: -3px;
+            top: 59px;
+        }
+
         .righty {
-            border-left: 0.09rem solid $charcoal;
+            //border-left: 0.1rem solid $charcoal;
 
             #crear {
                 background-color: white;
@@ -65,10 +75,30 @@ body {
                     font-size: 2rem;
                     font-weight: 600;
                     text-align: center;
+                    margin: 1rem 0 0 0;
                 }
 
                 .inside-container {
                     padding: 1rem;
+
+                    .row-input {
+                        margin-left: 4rem;
+                        margin-right: 4rem;
+                    }
+
+                    .btn {
+                        width: 70%;
+                        text-transform: none;
+                        height: 80%;
+                    }
+
+                    .center-align {
+                        a {
+                            width: 39%;
+                            text-transform: none;
+                            font-size: 16px;
+                        }
+                    }
                 }
             }
 

@@ -29,8 +29,13 @@ body #main .lefty button:hover {
   background-color: #26A195;
   color: #FDFFFC;
 }
-body #main .righty {
-  border-left: 0.09rem solid #2F404E;
+body #main .line {
+  border-left: 0.1rem solid #2F404E;
+  height: 91%;
+  position: absolute;
+  left: 17%;
+  margin-left: -3px;
+  top: 59px;
 }
 body #main .righty #crear {
   background-color: white;
@@ -44,9 +49,24 @@ body #main .righty #crear h1 {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
+  margin: 1rem 0 0 0;
 }
 body #main .righty #crear .inside-container {
   padding: 1rem;
+}
+body #main .righty #crear .inside-container .row-input {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+body #main .righty #crear .inside-container .btn {
+  width: 70%;
+  text-transform: none;
+  height: 80%;
+}
+body #main .righty #crear .inside-container .center-align a {
+  width: 39%;
+  text-transform: none;
+  font-size: 16px;
 }
 body #main .righty #reportes,
 body #main .righty #historial,

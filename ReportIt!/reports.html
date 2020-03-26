@@ -47,34 +47,42 @@
                 <button onclick="verHistorial()"><i class="fas fa-history"></i> &emsp;Historial</button>
                 <button onclick="verValorado()"><i class="fas fa-star"></i> &emsp;Valorado</button>
             </div>
+            <div class="line"></div>
             <div class="col s10 righty">
                 <div id="crear" class="container">
                     <h1>Reporte de Incidencias</h1>
                     <div class="row inside-container">
                         <form class="col s12">
-                            <div class="row">
+                            <div class="row row-input">
                                 <div class="input-field col s12">
                                     <input id="title" type="text" class="validate">
-                                    <label for="first_name">Title</label>
+                                    <label for="first_name">Título</label>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row row-input">
                                 <div class="input-field col s6">
                                     <input id="first_name" type="text" class="validate">
-                                    <label for="first_name">First Name</label>
+                                    <label for="first_name">Nombre</label>
                                 </div>
                                 <div class="input-field col s6">
                                     <input id="last_name" type="text" class="validate">
-                                    <label for="last_name">Last Name</label>
+                                    <label for="last_name">Fecha</label>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="input-field col s12">
+                            <div class="row row-input">
+                                <div class="input-field col s6">
                                     <textarea id="textarea1" class="materialize-textarea"></textarea>
                                     <label for="textarea1">Descripción del reporte</label>
                                 </div>
+                                <div class="input-field col s6">
+                                    <div class="btn">
+                                        <span>Insertar foto</span>
+                                    </div>
+                                </div>
                             </div>
-                            <a class="waves-effect waves-light btn-small">Publicar</a>
+                            <div class="center-align">
+                                <a class="waves-effect waves-light btn-small ">Publicar</a>
+                            </div>
                         </form>
                     </div>
                 </div>
