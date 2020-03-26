@@ -102,6 +102,41 @@ body {
                 }
             }
 
+            #reportes {
+                .report {
+                    background-color: white;
+                    padding: 1rem;
+                    margin-top: 3rem;
+                    border-radius: 2rem;
+                    border: 0.1rem solid black;
+                }
+
+                .description {
+                    color: $jungleg;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                }
+
+                .data {
+                    color: $charcoal;
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+
+                img {
+                    width: 82%;
+                    margin: 2rem 0rem 1rem 2rem;
+                }
+
+                .green {
+                    color: green;
+                }
+
+                .red {
+                    color: red;
+                }
+            }
+
             #reportes,
             #historial,
             #valorado {
