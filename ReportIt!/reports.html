@@ -47,7 +47,10 @@
                 <button onclick="verHistorial()"><i class="fas fa-history"></i> &emsp;Historial</button>
                 <button onclick="verValorado()"><i class="fas fa-star"></i> &emsp;Valorado</button>
             </div>
-            <div class="line"></div>
+            <!--
+
+                <div class="line"></div>
+            -->
             <div class="col s10 righty">
                 <div id="crear" class="container">
                     <h1>Reporte de Incidencias</h1>
@@ -89,18 +92,18 @@
                 <div id="reportes" class="container">
                     <div class="report">
                         <div class="row">
-                            <div class="col s6">
+                            <div class="col s6 col-img">
                                 <img src="img/estacionado.jpg" alt="">
                             </div>
-                            <div class="col s6">
+                            <div class="col s6 col-data">
                                 <table>
                                     <tr>
-                                        <th class="description">Nombre del incidente:</th>
-                                        <th class="data">Auto mal estacionado</th>
+                                        <td class="description">Nombre del incidente:</td>
+                                        <td class="data">Auto mal estacionado</td>
                                     </tr>
                                     <tr>
-                                        <th class="description">Persona que lo reporta:</th>
-                                        <th class="data">Diego Moreno</th>
+                                        <td class="description">Persona que lo reporta:</td>
+                                        <td class="data">Diego Moreno</td>
                                     </tr>
                                     <tr>
                                         <th class="description">Fecha del incidente:</th>
@@ -121,10 +124,10 @@
                     </div>
                     <div class="report">
                         <div class="row">
-                            <div class="col s6">
-                                <img src="img/bache2.jpg" alt="">
+                            <div class="col s6 col-img">
+                                <img src="img/bache2.png" alt="">
                             </div>
-                            <div class="col s6">
+                            <div class="col s6 col-data">
                                 <table>
                                     <tr>
                                         <th class="description">Nombre del incidente:</th>
@@ -151,20 +154,71 @@
                         </div>
                     </div>
                 </div>
-                <div id="historial">
+                <div id="historial" class="container">
                     <div class="report">
-                        <p>Nombre del incidente: </p>
-                        <p>Persona que lo reporta: </p>
-                        <p>Fecha del incidente: </p>
-                        <p>Incidente: </p>
+                        <div class="row">
+                            <div class="col s6 col-img">
+                                <img src="img/accidente.jpg" alt="">
+                            </div>
+                            <div class="col s6 col-data">
+                                <div class="right-align">
+                                    <a class="waves-effect waves-light btn"><i class="far fa-edit"></i></a>
+                                </div>
+
+                                <table>
+                                    <tr>
+                                        <td class="description">Nombre del incidente:</td>
+                                        <td class="data">Accidente</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="description">Persona que lo reporta:</td>
+                                        <td class="data">Diego Moreno</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="description">Fecha del incidente:</th>
+                                        <th class="data">02/02/2020</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="description">Incidente:</th>
+                                        <th class="data">Choque de dos autos en la Mexico-Cuernavaca</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div id="valorado">
-                    <div class="container">
-                        <p>Nombre del incidente: </p>
-                        <p>Persona que lo reporta: </p>
-                        <p>Fecha del incidente: </p>
-                        <p>Incidente: </p>
+                <div id="valorado" class="container">
+                    <div class="report">
+                        <div class="row">
+                            <div class="col s6 col-img">
+                                <img src="img/estacionado.jpg" alt="">
+                            </div>
+                            <div class="col s6 col-data">
+                                <div class="right-align">
+                                    <a class="waves-effect waves-light btn"><i class="fas fa-star"></i></a>
+                                </div>
+
+                                <table>
+                                    <tr>
+                                        <td class="description">Nombre del incidente:</td>
+                                        <td class="data">Auto mal estacionado</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="description">Persona que lo reporta:</td>
+                                        <td class="data">Diego Moreno</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="description">Fecha del incidente:</th>
+                                        <th class="data">12/02/2020</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="description">Incidente:</th>
+                                        <th class="data">En la calle Prolongación Miramontes hay un auto mal
+                                            estacionado.</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

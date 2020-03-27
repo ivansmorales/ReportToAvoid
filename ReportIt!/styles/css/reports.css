@@ -1,4 +1,5 @@
 body {
+  height: 100%;
   background-color: #EDEDED;
   font-family: "Poppins", sans-serif;
 }
@@ -11,8 +12,16 @@ body #navbar .charcoal {
 body #navbar .right {
   padding-right: 10rem;
 }
-body #main .lefty {
-  padding-top: 2rem;
+body #main {
+  /*
+  .line {
+      //border-left: 0.1rem solid $charcoal;
+      //height: 100%;
+      position: absolute;
+      left: 17%;
+      margin-left: -3px;
+      top: 59px;
+  }*/
 }
 body #main .lefty button {
   width: 100%;
@@ -29,13 +38,11 @@ body #main .lefty button:hover {
   background-color: #26A195;
   color: #FDFFFC;
 }
-body #main .line {
+body #main .righty {
   border-left: 0.1rem solid #2F404E;
-  height: 91%;
-  position: absolute;
-  left: 17%;
-  margin-left: -3px;
-  top: 59px;
+  min-height: 100%;
+  height: 100%;
+  padding-top: 2rem;
 }
 body #main .righty #crear {
   background-color: white;
@@ -68,31 +75,47 @@ body #main .righty #crear .inside-container .center-align a {
   text-transform: none;
   font-size: 16px;
 }
-body #main .righty #reportes .report {
+body #main .righty #reportes,
+body #main .righty #historial,
+body #main .righty #valorado {
+  display: none;
+}
+body #main .righty #reportes .green {
+  color: green;
+}
+body #main .righty #reportes .red {
+  color: red;
+}
+body #main .righty #reportes a {
+  margin-top: 1rem;
+}
+body #main .righty .report {
   background-color: white;
   padding: 1rem;
   margin-top: 3rem;
   border-radius: 2rem;
   border: 0.1rem solid black;
 }
-body #main .righty #reportes .description {
-  color: #26A195;
-  font-weight: 600;
-  font-size: 1.1rem;
+body #main .righty .report .col-img {
+  width: 40%;
 }
-body #main .righty #reportes .data {
+body #main .righty .report .col-data {
+  width: 60%;
+}
+body #main .righty .report .description {
+  color: #26A195;
+  font-weight: 800;
+  font-size: 1.1rem;
+  width: 54%;
+}
+body #main .righty .report .data {
   color: #2F404E;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
 }
-body #main .righty #reportes img {
+body #main .righty .report img {
   width: 82%;
   margin: 2rem 0rem 1rem 2rem;
-}
-body #main .righty #reportes,
-body #main .righty #historial,
-body #main .righty #valorado {
-  display: none;
 }
 
 /*# sourceMappingURL=reports.css.map */
