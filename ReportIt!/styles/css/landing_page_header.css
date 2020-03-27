@@ -11974,4 +11974,26 @@ img {
   bottom: 0;
 }
 
+@media (max-width: 480px) {
+  .header,
+.carousel,
+.features,
+.integrants,
+.contact,
+.footer {
+    width: 100%;
+  }
+
+  .btn-success {
+    width: 100%;
+  }
+
+  .features,
+.integrants,
+.contact,
+.carousel {
+    height: auto;
+  }
+}
+
 /*# sourceMappingURL=landing_page_header.css.map */
