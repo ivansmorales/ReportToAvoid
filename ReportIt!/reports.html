@@ -36,6 +36,24 @@
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Usuario</a></li>
                 </ul>
+                <ul id="slide-out" class="sidenav">
+                    <li>
+                        <img src="img/logo.png">
+                    </li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li><a class="waves-effect" href="index.html">Inicio</a></li>
+                    <li><a class="waves-effect" href="index.html">Cerrar sesión</a></li>
+                    <li><a class="subheader"></a></li>
+                    <li><a class="sidenav-close" onclick="verCrear()"><i class="far fa-newspaper"></i>Crear</a></li>
+                    <li><a class="sidenav-close" onclick="verReportes()"><i class="fas fa-comment-alt"></i>Reportes</a>
+                    </li>
+                    <li><a class="sidenav-close" onclick="verHistorial()"><i class="fas fa-history"></i>Historial</a>
+                    </li>
+                    <li><a class="sidenav-close" onclick="verValorado()"><i class="fas fa-star"></i>Valorado</a></li>
+                </ul>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
             </div>
         </nav>
     </section>
@@ -232,6 +250,10 @@
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
         function verCrear() {
             $("#crear").show();
             $("#reportes").hide();

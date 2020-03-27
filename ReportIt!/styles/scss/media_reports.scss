@@ -1,0 +1,45 @@
+@media only screen and (max-width: 992px) {
+    #navbar {
+        #slide-out {
+            background-color: $charcoal;
+
+            img {
+                margin-left: 0;
+            }
+
+            a,
+            i {
+                color: $babypowder;
+            }
+        }
+    }
+
+    #main {
+        .lefty {
+            button {
+
+                display: none;
+            }
+        }
+
+        .col.s10 {
+            width: 100%;
+        }
+
+
+    }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+
+    #crear,
+    #reportes,
+    #historial,
+    #valorado {
+
+        .col-img {
+            width: 100% !important;
+        }
+
+    }
+}

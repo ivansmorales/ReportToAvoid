@@ -1,3 +1,30 @@
+@media only screen and (max-width: 992px) {
+  #navbar #slide-out {
+    background-color: #2F404E;
+  }
+  #navbar #slide-out img {
+    margin-left: 0;
+  }
+  #navbar #slide-out a,
+#navbar #slide-out i {
+    color: #FDFFFC;
+  }
+
+  #main .lefty button {
+    display: none;
+  }
+  #main .col.s10 {
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  #crear .col-img,
+#reportes .col-img,
+#historial .col-img,
+#valorado .col-img {
+    width: 100% !important;
+  }
+}
 body {
   height: 100%;
   background-color: #EDEDED;

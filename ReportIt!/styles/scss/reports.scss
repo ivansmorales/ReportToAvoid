@@ -5,6 +5,8 @@ $amaranth: #E93148;
 $deep: #FFA730;
 $main: #EDEDED;
 
+@import "./media_reports.scss";
+
 body {
     height: 100%;
     background-color: $main;
