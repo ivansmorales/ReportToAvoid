@@ -10,6 +10,7 @@
             a,
             i {
                 color: $babypowder;
+                font-size: 1.5rem !important;
             }
         }
     }
@@ -31,6 +32,15 @@
 }
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+    #navbar {
+        #slide-out {
+
+            a,
+            i {
+                font-size: 1.8rem !important;
+            }
+        }
+    }
 
     #crear,
     #reportes,
@@ -41,5 +51,60 @@
             width: 100% !important;
         }
 
+    }
+
+    .righty {
+        border-left: 0 !important;
+
+        #crear {
+            .inside-container {
+                .row-input {
+                    margin: 0 !important;
+
+                    .input-field>label {
+                        font-size: 1.4rem;
+                    }
+
+                    .col.s6 {
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                    .btn {
+                        width: 85% !important;
+                        text-transform: none !important;
+                        height: 80% !important;
+                        font-size: 1.4rem;
+                    }
+
+                }
+
+                .waves-effect {
+                    width: 100% !important;
+                    text-transform: none !important;
+                    font-size: 1.5rem !important;
+                }
+
+            }
+        }
+
+        .report {
+
+            .col-data {
+                width: 100% !important;
+
+                .right-align {
+                    text-align: center !important;
+                }
+
+                .description {
+                    font-size: 1.4rem !important;
+                }
+
+                .data {
+                    font-size: 1.25rem !important;
+                }
+            }
+        }
     }
 }

@@ -8,6 +8,7 @@
   #navbar #slide-out a,
 #navbar #slide-out i {
     color: #FDFFFC;
+    font-size: 1.5rem !important;
   }
 
   #main .lefty button {
@@ -18,11 +19,53 @@
   }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  #navbar #slide-out a,
+#navbar #slide-out i {
+    font-size: 1.8rem !important;
+  }
+
   #crear .col-img,
 #reportes .col-img,
 #historial .col-img,
 #valorado .col-img {
     width: 100% !important;
+  }
+
+  .righty {
+    border-left: 0 !important;
+  }
+  .righty #crear .inside-container .row-input {
+    margin: 0 !important;
+  }
+  .righty #crear .inside-container .row-input .input-field > label {
+    font-size: 1.4rem;
+  }
+  .righty #crear .inside-container .row-input .col.s6 {
+    width: 100%;
+    text-align: center;
+  }
+  .righty #crear .inside-container .row-input .btn {
+    width: 85% !important;
+    text-transform: none !important;
+    height: 80% !important;
+    font-size: 1.4rem;
+  }
+  .righty #crear .inside-container .waves-effect {
+    width: 100% !important;
+    text-transform: none !important;
+    font-size: 1.5rem !important;
+  }
+  .righty .report .col-data {
+    width: 100% !important;
+  }
+  .righty .report .col-data .right-align {
+    text-align: center !important;
+  }
+  .righty .report .col-data .description {
+    font-size: 1.4rem !important;
+  }
+  .righty .report .col-data .data {
+    font-size: 1.25rem !important;
   }
 }
 body {
