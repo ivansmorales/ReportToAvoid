@@ -1,0 +1,14 @@
+body #navbar .charcoal {
+  background-color: #26A195;
+}
+body #main .righty #reportes {
+  display: block;
+}
+body #main .righty #reportes a {
+  background-color: #2F404E;
+}
+body #main .righty #crear {
+  display: none;
+}
+
+/*# sourceMappingURL=reports_admin.css.map */
