@@ -1,9 +1,6 @@
 @import 'variables';
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/variables';
-@import 'bootstrap/forms';
-@import 'bootstrap/carousel';
-@import 'bootstrap/buttons';
 @import 'bootstrap/navbar';
 @import 'bootstrap/reboot';
 @import 'bootstrap/utilities/background';
@@ -14,21 +11,6 @@
 
 .navbar-brand {
     margin-right: 30%;
-}
-
-img {
-    .size {
-        width: 250px;
-        height: 250px;
-        border: 0px solid;
-        border-radius: 50%;
-    }
-}
-
-img {
-    width: $width_logo_header;
-    height: $height_logo_header;
-    margin-left: $margin-left-img;
 }
 
 
@@ -47,7 +29,6 @@ img {
     z-index: -1;
     content: '';
     display: block;
-    border: 5px solid #2980b9;
 }
 
 .ribbon {
@@ -64,228 +45,134 @@ img {
     }
 }
 
-.ribbon-top-right {
+
+/* top left*/
+
+.ribbon-top-left {
     top: 0px;
-    right: 0px;
+    left: 0px;
 }
 
-.ribbon-top-right::before,
-.ribbon-top-right::after {
+.ribbon-top-left::before,
+.ribbon-top-left::after {
     border-top-color: transparent;
-    border-right-color: transparent;
+    border-left-color: transparent;
 }
 
-.ribbon-top-right::before {
+.ribbon-top-left::before {
     top: 0;
-    left: 0;
-}
-
-.ribbon-top-right::after {
-    bottom: 0;
     right: 0;
 }
 
-.ribbon-top-right {
-    span {
-        left: -25px;
-        top: 30px;
-        transform: rotate(45deg);
-    }
-}
-
-
-/* Carousel */
-
-.carousel {
-    img {
-        width: 30%;
-    }
-}
-
-.carousel {
-    p {
-        font-size: 1.3rem;
-    }
-}
-
-.carousel-item {
-    height: 89vh;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-
-/* Features */
-
-.features {
-    padding: 5% 15%;
-    height: 100vh;
-    background-color: $color-background;
-}
-
-.features {
-    h1 {
-        color: $color-background-admin;
-        font-size: 50px;
-        text-align: center;
-    }
-}
-
-.features {
-    p {
-        margin-top: 50px;
-        color: white;
-        font-size: 20px;
-        text-align: center;
-    }
-}
-
-.feature-title {
-    font-size: 30px;
-    color: $color-background-admin;
-}
-
-.feature-box {
-    padding: 4.5%;
-    text-align: center;
-}
-
-.icon {
-    color: $color-background-admin;
-    margin-bottom: 1rem;
-}
-
-.icon:hover {
-    color: white;
-}
-
-.featuresp {
-    color: #fff;
-}
-
-.size {
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
-}
-
-
-/* Integrants */
-
-.integrants {
-    height: 100vh;
-    padding: 5% 15%;
-}
-
-.integrants {
-    h1 {
-        color: $color-background;
-        font-size: 50px;
-        text-align: center;
-    }
-}
-
-.integrants {
-    p {
-        margin-top: 30px;
-        color: black;
-        font-size: 20px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-}
-
-.integrants {
-    .featuresp {
-        color: $color-background;
-        text-align: center;
-    }
-}
-
-.integrants {
-    .feature-box {
-        padding: 0.5% 0.5%;
-        text-align: center;
-    }
-}
-
-
-/* Contact */
-
-.contact {
-    background-color: $color-background;
-    color: white;
-    padding: 5% 15%;
-    height: 100vh;
-}
-
-.contact {
-    h1 {
-        color: $color-background-admin;
-        font-size: 50px;
-        text-align: center;
-    }
-}
-
-.contact {
-    p {
-        margin-top: 25px;
-        color: white;
-        font-size: 15px;
-        text-align: center;
-    }
-}
-
-.contact {
-    .icon {
-        color: $color-background-admin;
-    }
-}
-
-.btn-success {
-    background-color: $color-background-admin;
-    border-color: $color-background-admin;
-    width: 400px;
-    margin-top: $margin-top-btn-succes;
-    height: 40px;
-}
-
-.footer {
-    background-color: $color-footer;
-    text-align: center;
-    padding-top: $padding_footer;
-    height: $height_footer;
-    width: 100%;
+.ribbon-top-left::after {
     bottom: 0;
+    left: 0;
+}
+
+.ribbon-top-left {
+    span {
+        right: -25px;
+        top: 30px;
+        transform: rotate(-45deg);
+    }
 }
 
 //Mobile version
 @mixin mobile {
-    @media (max-width:#{$mobile-width}) {
+    @media (max-width:#{$phone-width}) {
+        @content;
+    }
+}
+
+@mixin tablet_large {
+    @media (min-width:#{$medium-tablet-max-width}) and (max-width:#{$large-tablet-max-width}) {
+        @content;
+    }
+}
+
+@mixin tablet_small {
+    @media (min-width:#{$medium-tablet-max-width}) {
         @content;
     }
 }
 
 @include mobile {
-    .header,
-    .carousel,
-    .features,
-    .integrants,
-    .contact,
-    .footer {
-        width: 100%;
+    .ribbon-top-left {
+        top: -10px;
+        left: 60%;
     }
-    .btn-success {
-        width: 100%;
+    .ribbon-top-left::before,
+    .ribbon-top-left::after {
+        border-top-color: transparent;
+        border-right-color: transparent;
     }
-    .features,
-    .integrants,
-    .contact,
-    .carousel {
-        height: auto;
+    .ribbon-top-left::before {
+        top: 0;
+        left: 0;
+    }
+    .ribbon-top-left::after {
+        bottom: 0;
+        right: 0;
+    }
+    .ribbon-top-left {
+        span {
+            left: -25px;
+            top: 30px;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+@include tablet_large {
+    .ribbon-top-left {
+        top: -10px;
+        left: 874px;
+    }
+    .ribbon-top-left::before,
+    .ribbon-top-left::after {
+        border-top-color: transparent;
+        border-right-color: transparent;
+    }
+    .ribbon-top-left::before {
+        top: 0;
+        left: 0;
+    }
+    .ribbon-top-left::after {
+        bottom: 0;
+        right: 0;
+    }
+    .ribbon-top-left {
+        span {
+            left: -25px;
+            top: 30px;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+@include tablet_small {
+    .ribbon-top-left {
+        top: -10px;
+        left: 618px;
+    }
+    .ribbon-top-left::before,
+    .ribbon-top-left::after {
+        border-top-color: transparent;
+        border-right-color: transparent;
+    }
+    .ribbon-top-left::before {
+        top: 0;
+        left: 0;
+    }
+    .ribbon-top-left::after {
+        bottom: 0;
+        right: 0;
+    }
+    .ribbon-top-left {
+        span {
+            left: -25px;
+            top: 30px;
+            transform: rotate(45deg);
+        }
     }
 }

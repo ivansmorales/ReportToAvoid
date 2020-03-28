@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles/css/login.css">
+    <link rel="stylesheet" href="styles/css/login_header.css">
+    <link rel="stylesheet" href="styles/css/login_footer.css">
+
 
     <!--  Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
@@ -31,6 +34,10 @@
 
     <section class="header">
         <img src="img/logo_4m.png" alt="logo">
+        <div class="box">
+            <div class="ribbon ribbon-top-right"><span>Beta</span>
+            </div>
+        </div>
     </section>
 
     <section class="login">
@@ -55,11 +62,12 @@
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" class="btn btn-success">Iniciar Sesión</button>
+                    <input type="button" onclick="window.location.href = 'reports.html';" class="btn btn-success" value="Iniciar Sesión"></input>
+
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" class="btn btn-secondary">Iniciar Sesión con Twitter</button>
+                    <input type="button" onclick="window.location.href = 'reports.html';" class="btn btn-secondary" value="Iniciar Sesión con Twitter"></input>
                 </div>
 
 

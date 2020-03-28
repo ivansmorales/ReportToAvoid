@@ -15,12 +15,10 @@
     <link type="text/css" rel="stylesheet" href="styles/css/materialize.css" media="screen,projection" />
 
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- Styles -->
     <link rel="stylesheet" href="styles/css/reports.css">
 </head>
@@ -33,8 +31,8 @@
                     <img src="img/logo.png" alt="" width="150" height="auto">
                 </a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Usuario</a></li>
+                    <li><a onclick="verReportes()">Inicio</a></li>
+                    <li><a href="login.html">Cerrar Sesión</a></li>
                 </ul>
                 <ul id="slide-out" class="sidenav">
                     <li>
@@ -43,9 +41,11 @@
                     <li>
                         <div class="divider"></div>
                     </li>
-                    <li><a class="waves-effect" href="index.html">Inicio</a></li>
-                    <li><a class="waves-effect" href="index.html">Cerrar sesión</a></li>
-                    <li><a class="subheader"></a></li>
+                    <li><a class="waves-effect" onclick="verReportes()">Inicio</a></li>
+                    <li><a class="waves-effect" href="login.html">Cerrar sesión</a></li>
+                    <li>
+                        <a class="subheader"></a>
+                    </li>
                     <li><a class="sidenav-close" onclick="verCrear()"><i class="far fa-newspaper"></i>Crear</a></li>
                     <li><a class="sidenav-close" onclick="verReportes()"><i class="fas fa-comment-alt"></i>Reportes</a>
                     </li>
@@ -129,8 +129,8 @@
                                     </tr>
                                     <tr>
                                         <th class="description">Incidente:</th>
-                                        <th class="data">En la calle Prolongación Miramontes hay un auto mal
-                                            estacionado.</th>
+                                        <th class="data">En la calle Prolongación Miramontes hay un auto mal estacionado.
+                                        </th>
                                     </tr>
                                 </table>
                             </div>
@@ -235,8 +235,8 @@
                                     </tr>
                                     <tr>
                                         <th class="description">Incidente:</th>
-                                        <th class="data">En la calle Prolongación Miramontes hay un auto mal
-                                            estacionado.</th>
+                                        <th class="data">En la calle Prolongación Miramontes hay un auto mal estacionado.
+                                        </th>
                                     </tr>
                                 </table>
                             </div>
@@ -250,7 +250,7 @@
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.sidenav').sidenav();
         });
 

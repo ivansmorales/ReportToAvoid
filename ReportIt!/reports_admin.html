@@ -15,15 +15,17 @@
     <link type="text/css" rel="stylesheet" href="styles/css/materialize.css" media="screen,projection" />
 
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- Styles -->
     <link rel="stylesheet" href="styles/css/reports.css">
     <link rel="stylesheet" href="styles/css/reports_admin.css">
+
+
+    <link rel="icon" href="img/logo_admin.png">
+
 </head>
 
 <body>
@@ -31,11 +33,11 @@
         <nav class="charcoal">
             <div class="nav-wrapper">
                 <a href="#!" class="brand-logo">
-                    <img src="img/logo.png" alt="" width="150" height="auto">
+                    <img src="img/logo_admin.png" alt="" width="150" height="50" style="margin-top: 6px;">
                 </a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Usuario</a></li>
+                    <li><a onclick="verReportes()">Inicio</a></li>
+                    <li><a href="login_admin.html">Cerrar Sesión</a></li>
                 </ul>
                 <ul id="slide-out" class="sidenav">
                     <li>
@@ -44,13 +46,13 @@
                     <li>
                         <div class="divider"></div>
                     </li>
-                    <li><a class="waves-effect" href="index.html">Inicio</a></li>
-                    <li><a class="waves-effect" href="index.html">Cerrar sesión</a></li>
-                    <li><a class="subheader"></a></li>
+                    <li><a class="waves-effect" onclick="verReportes()">Inicio</a></li>
+                    <li><a class="waves-effect" href="login_admin.html">Cerrar sesión</a></li>
+                    <li>
+                        <a class="subheader"></a>
+                    </li>
                     <li><a class="sidenav-close" onclick="verCrear()"><i class="far fa-newspaper"></i>Crear</a></li>
                     <li><a class="sidenav-close" onclick="verReportes()"><i class="fas fa-comment-alt"></i>Reportes</a>
-                    </li>
-                    <li><a class="sidenav-close" onclick="verHistorial()"><i class="fas fa-history"></i>Historial</a>
                     </li>
                     <li><a class="sidenav-close" onclick="verValorado()"><i class="fas fa-star"></i>Valorado</a></li>
                 </ul>
@@ -62,7 +64,8 @@
         <div class="row">
             <div class="col s2 lefty">
                 <button onclick="verReportes()"><i class="fas fa-comment-alt"></i> &emsp;Reportes</button>
-                <button onclick="verCrear()"><i class="far fa-newspaper"></i> &emsp;Editar</button>
+                <button onclick="verCrear()"><i class="fas fa-newspaper"></i> &emsp;Editar</button>
+                <button onclick="verValorado()"><i class="far fa-star"></i> &emsp;Valorado</button>
             </div>
             <div class="col s10 righty">
                 <div id="crear" class="container">
@@ -102,6 +105,7 @@
                         </form>
                     </div>
                 </div>
+                <!---->
                 <div id="reportes" class="container">
                     <div class="right-align">
                         <a class="waves-effect waves-light btn-small ">Descargar</a>
@@ -127,8 +131,8 @@
                                     </tr>
                                     <tr>
                                         <th class="description">Incidente:</th>
-                                        <th class="data">En la calle Prolongación Miramontes hay un auto mal
-                                            estacionado.</th>
+                                        <th class="data">En la calle Prolongación Miramontes hay un auto mal estacionado.
+                                        </th>
                                     </tr>
                                 </table>
                             </div>
@@ -162,6 +166,17 @@
                         </div>
                     </div>
                 </div>
+                <!---->
+                <div id="valorado" class="container">
+                    <div class="report">
+                        <div class="row">
+                            <div class="col s6 col-img" style="width: 750px;">
+                                <img src="img/mapa.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
 
@@ -170,21 +185,29 @@
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.sidenav').sidenav();
         });
 
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.sidenav').sidenav();
         });
 
         function verCrear() {
             $("#crear").show();
             $("#reportes").hide();
+            $("#valorado").hide();
         }
 
         function verReportes() {
             $("#reportes").show();
+            $("#crear").hide();
+            $("#valorado").hide();
+        }
+
+        function verValorado() {
+            $("#valorado").show();
+            $("#reportes").hide();
             $("#crear").hide();
         }
     </script>

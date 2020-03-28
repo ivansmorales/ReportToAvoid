@@ -7,17 +7,6 @@ body {
     background-color: $color-background;
 }
 
-.header {
-    height: $height-header;
-}
-
-img {
-    width: $width_logo_header;
-    height: $height_logo_header;
-    margin-left: $margin-left-img;
-    margin-top: $margin-top-img;
-}
-
 h1 {
     color: $color-text;
     text-align: center;
@@ -51,16 +40,6 @@ a {
     padding-bottom: 1%;
 }
 
-.footer {
-    background-color: $color-footer;
-    text-align: center;
-    padding-top: $padding_footer;
-    height: $height_footer;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-
 .form-control {
     margin-left: $margin-left-form-control;
     margin-right: $margin-right-form-control;
@@ -91,12 +70,60 @@ a {
 
 //Mobile version
 @mixin mobile {
-    @media (max-width:#{$mobile-width}) {
+    @media (max-width:#{$phone-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width:#{$medium-tablet-max-width}) and (max-width:#{$large-tablet-max-width}) {
         @content;
     }
 }
 
 @include mobile {
+    img {
+        width: $width-img-mobile;
+        height: $height-img-mobile;
+        margin-left: $margin-left-img-mobile;
+    }
+    .login {
+        height: 450px;
+        width: 90%;
+        background-color: $color-background;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    a {
+        color: $color-background-admin;
+    }
+    .form-control {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        margin-bottom: 1px;
+        height: 40px;
+    }
+    .btn-success {
+        width: 90%;
+        margin-top: 25px;
+        height: 35px;
+    }
+    .btn-secondary {
+        width: 90%;
+        margin-top: 25px;
+        height: 35px;
+    }
+    .form-group {
+        label {
+            color: white;
+        }
+    }
+}
+
+@include tablet {
     img {
         width: $width-img-mobile;
         height: $height-img-mobile;
