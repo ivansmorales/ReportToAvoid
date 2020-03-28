@@ -10811,7 +10811,7 @@ input[type=button].btn-block {
 }
 
 body {
-  background-color: #26a195;
+  background-color: #9c9c9c;
 }
 
 h1 {
@@ -10843,7 +10843,7 @@ h1 {
 
 .btn-success {
   background-color: #2f404e;
-  border-color: #26a195;
+  border-color: #9c9c9c;
   width: 60%;
   margin-top: 75px;
   height: 35px;
@@ -10859,7 +10859,7 @@ h1 {
   .login {
     height: 450px;
     width: 90%;
-    background-color: #26a195;
+    background-color: #9c9c9c;
     margin-left: 5%;
     margin-right: 5%;
     padding-top: 3%;
@@ -10894,7 +10894,7 @@ h1 {
   .login {
     height: 450px;
     width: 90%;
-    background-color: #26a195;
+    background-color: #9c9c9c;
     margin-left: 5%;
     margin-right: 5%;
     padding-top: 3%;
