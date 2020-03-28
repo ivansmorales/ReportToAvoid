@@ -10739,35 +10739,7 @@ button.bg-dark:focus {
 @media (min-width: 767px) and (max-width: 1024px) {
   .ribbon-top-left {
     top: -10px;
-    left: 874px;
-  }
-
-  .ribbon-top-left::before,
-.ribbon-top-left::after {
-    border-top-color: transparent;
-    border-right-color: transparent;
-  }
-
-  .ribbon-top-left::before {
-    top: 0;
-    left: 0;
-  }
-
-  .ribbon-top-left::after {
-    bottom: 0;
-    right: 0;
-  }
-
-  .ribbon-top-left span {
-    left: -25px;
-    top: 30px;
-    transform: rotate(45deg);
-  }
-}
-@media (min-width: 767px) {
-  .ribbon-top-left {
-    top: -10px;
-    left: 618px;
+    left: 615px;
   }
 
   .ribbon-top-left::before,

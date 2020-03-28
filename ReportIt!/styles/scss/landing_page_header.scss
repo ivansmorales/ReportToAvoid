@@ -91,7 +91,7 @@
 }
 
 @mixin tablet_small {
-    @media (min-width:#{$medium-tablet-max-width}) {
+    @media (min-width:#{$medium-tablet-max-width}) and (max-width:#{$large-tablet-max-width}) {
         @content;
     }
 }
@@ -123,37 +123,10 @@
     }
 }
 
-@include tablet_large {
-    .ribbon-top-left {
-        top: -10px;
-        left: 874px;
-    }
-    .ribbon-top-left::before,
-    .ribbon-top-left::after {
-        border-top-color: transparent;
-        border-right-color: transparent;
-    }
-    .ribbon-top-left::before {
-        top: 0;
-        left: 0;
-    }
-    .ribbon-top-left::after {
-        bottom: 0;
-        right: 0;
-    }
-    .ribbon-top-left {
-        span {
-            left: -25px;
-            top: 30px;
-            transform: rotate(45deg);
-        }
-    }
-}
-
 @include tablet_small {
     .ribbon-top-left {
         top: -10px;
-        left: 618px;
+        left: 615px;
     }
     .ribbon-top-left::before,
     .ribbon-top-left::after {
