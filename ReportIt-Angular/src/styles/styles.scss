@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+//Bootstrap import:
+@import "~bootstrap/scss/bootstrap.scss";
+
+//Materialize import:
+//@import "~materialize-css/sass/materialize.scss";
+
+/* Reports variables */
+@import "./reports_styles/reports.scss"

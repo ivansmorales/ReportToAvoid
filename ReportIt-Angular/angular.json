@@ -28,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/styles.scss"
             ],
             "scripts": []
           },
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ReportIt-Angular"
+    }
+  },
+  "defaultProject": "ReportIt-Angular",
+  "cli": {
+    "analytics": "c5acf8ea-ec73-435c-a15f-48698b61829b"
+  }
 }
