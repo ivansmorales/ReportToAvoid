@@ -8,6 +8,7 @@ import { ReportsAdminComponent } from './main_components/reports-admin/reports-a
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HeaderLandingPageComponent } from './header-landing-page/header-landing-page.component';
 import { InfoLandingPageComponent } from './info-landing-page/info-landing-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { InfoLandingPageComponent } from './info-landing-page/info-landing-page.
     LandingPageComponent,
     HeaderLandingPageComponent,
     InfoLandingPageComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
