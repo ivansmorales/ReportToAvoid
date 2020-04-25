@@ -5,10 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReportsComponent } from './main_components/reports/reports.component';
 import { ReportsAdminComponent } from './main_components/reports-admin/reports-admin.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
-import { HeaderLandingPageComponent } from './header-landing-page/header-landing-page.component';
-import { InfoLandingPageComponent } from './info-landing-page/info-landing-page.component';
-import { FooterComponent } from './footer/footer.component';
+import { LandingPageComponent } from './main_components/landing-page/landing-page/landing-page.component';
+import { HeaderLandingPageComponent } from './main_components/landing-page/landing-page/components/header-landing-page/header-landing-page.component';
+import { InfoLandingPageComponent } from './main_components/landing-page/landing-page/components/info-landing-page/info-landing-page.component';
+import { FooterComponent } from './main_components/footer/footer.component';
 
 @NgModule({
   declarations: [
