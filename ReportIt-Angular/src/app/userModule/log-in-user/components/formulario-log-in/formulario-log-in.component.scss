@@ -1,10 +1,11 @@
 @import 'src/app/main_components/variables';
-@import 'node_modules/bootstrap/scss/bootstrap';
-@import 'node_modules/bootstrap/scss/variables';
-@import 'node_modules/bootstrap/scss/forms';
-@import 'node_modules/bootstrap/scss/buttons';
-body {
+@import '~node_modules/bootstrap/scss/bootstrap';
+@import '~node_modules/bootstrap/scss/variables';
+@import '~node_modules/bootstrap/scss/forms';
+@import '~node_modules/bootstrap/scss/buttons';
+.background {
     background-color: $color-background;
+    height: 500px;
 }
 
 h1 {
@@ -53,7 +54,8 @@ a {
 }
 
 .btn-success {
-    background-color: $color-background-admin;
+    //background-color: $color-background-admin;
+    background-color: $color-header-admin;
     border-color: $color-background-admin;
     width: $width_button;
     margin-top: $margin-top-btn-succes;
