@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RegisterUserComponent } from './register-user/register-user.component';
+import { LogInUserComponent } from './log-in-user/log-in-user.component';
+import { ReportsUserComponent } from './reports-user/reports-user.component';
+import { FormularioRegisterComponent } from './log-in-user/components/formulario-register/formulario-register.component';
+import { FormularioLogInComponent } from './log-in-user/components/formulario-log-in/formulario-log-in.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [RegisterUserComponent, LogInUserComponent, ReportsUserComponent, FormularioRegisterComponent, FormularioLogInComponent],
   imports: [
     CommonModule
   ]
