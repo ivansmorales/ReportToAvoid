@@ -23,6 +23,11 @@ import { HeaderRegisterLogInUserComponent } from './main_components/header-regis
 import {FormRegisteruserComponent} from './userModule/register-user/components/form-registeruser/form-registeruser.component';
 import{RegisterUserComponent} from './userModule/register-user/register-user.component' 
 
+//Imports del componente Login de Admin
+import{LoginAdminComponent} from './adminModule/login-admin/login-admin.component'
+import{FormLoginComponent} from './adminModule/login-admin/components/form-login/form-login.component'
+import{HeaderAdminComponent} from './adminModule/login-admin/components/header-admin/header-admin.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +41,11 @@ import{RegisterUserComponent} from './userModule/register-user/register-user.com
     FormularioLogInComponent,
     HeaderRegisterLogInUserComponent,
     FormRegisteruserComponent,
-    RegisterUserComponent
+    RegisterUserComponent,
+    LoginAdminComponent, 
+    FormLoginComponent,
+    HeaderAdminComponent
+
   ],
   imports: [
     BrowserModule,
