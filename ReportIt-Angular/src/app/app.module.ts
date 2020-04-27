@@ -19,6 +19,10 @@ import {LogInUserComponent} from './userModule/log-in-user/log-in-user.component
 import {FormularioLogInComponent} from './userModule/log-in-user/components/formulario-log-in/formulario-log-in.component';
 import { HeaderRegisterLogInUserComponent } from './main_components/header-register-log-in-user/header-register-log-in-user.component';
 
+//Imports del componente Register de User
+import {FormRegisteruserComponent} from './userModule/register-user/components/form-registeruser/form-registeruser.component';
+import{RegisterUserComponent} from './userModule/register-user/register-user.component' 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +34,9 @@ import { HeaderRegisterLogInUserComponent } from './main_components/header-regis
     FooterComponent,
     LogInUserComponent,
     FormularioLogInComponent,
-    HeaderRegisterLogInUserComponent
+    HeaderRegisterLogInUserComponent,
+    FormRegisteruserComponent,
+    RegisterUserComponent
   ],
   imports: [
     BrowserModule,
