@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+//Imports del componente Reports
 import { HeaderComponent } from './main_components/reports/header/header.component';
 import { CrearReportesComponent } from './main_components/reports/crear-reportes/crear-reportes.component';
 import { ReportesComponent } from './main_components/reports/reportes/reportes.component';
